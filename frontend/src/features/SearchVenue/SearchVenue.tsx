@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Input from '@/components/common/Input'
 import Button from '@/components/common/Button'
 import { venueApi } from '@/api/venueApi'
+import SearchIcon from '@/components/icons/SearchIcon'
 
 export default function SearchVenue() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,8 @@ export default function SearchVenue() {
           onChange={handleChange}
           suggestions={suggestions}
           placeholder='Venue Type'
-          className='rounded-tl-xl'
+          roundedTopLeft
+          iconLeft={<SearchIcon />}
         />
         <Input
           name='date'
@@ -53,10 +55,10 @@ export default function SearchVenue() {
           value={formData.location}
           onChange={handleChange}
           placeholder='Location'
-          className='rounded-br-xl'
+          roundedBottonRight
         />
 
-        <Button>Button</Button>
+        <Button>Search</Button>
       </div>
     </div>
   )

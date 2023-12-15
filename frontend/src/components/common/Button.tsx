@@ -10,7 +10,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`rounded-tl-2xl rounded-br-2xl bg-lime-400 py-2 px-8 m-1 ${className}`}
+      className={`rounded-tl-2xl rounded-br-2xl bg-lime-400 text-black py-2 px-8 m-1 cursor-pointer ${className}`}
       {...restProps}
     >
       {children}
