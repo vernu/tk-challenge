@@ -1,4 +1,4 @@
-module example/web-service-gin
+module tk-challenge
 
 go 1.20
 
